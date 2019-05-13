@@ -1,0 +1,43 @@
+<view class="aricalDetail">
+<!-- 头部内容 -->
+  <view class="title">
+    {{details.title}}
+  </view>
+  <view class="times">
+    {{timeTitle}}
+  </view> 
+  <view class="images">
+    <image class="img" src="{{details.cover}}"></image>
+  </view>
+  <!-- 文章内容 -->
+  <view class="content">
+    <view class="box" wx:for="{{content}}" wx:key="{{item.id}}">
+      <image class="imgs" src="{{item.url}}" wx:if="{{item.url}}"></image>
+      <view class="content_title" wx:if="{{item.text}}">
+        {{item.text}}
+      </view>
+    </view>
+  </view>
+  <!-- 文章推荐/ -->
+  <view class="recommendAtical">
+    <view class="recommend">
+    <text class="recommend-l"></text>
+    <text class="recommend-r">推荐文章</text>
+  </view>
+  <view class="articallist" wx:for="{{aricalList}}" wx:key="{{item.id}}">
+    <view class="articallist-l">
+      <image src="{{item.cover}}"></image>
+    </view>
+    <view class="articallist-r">
+      <view>{{item.title}}</view>
+      <view class="currentTime">{{item.time}}</view>
+    </view>
+  </view>
+  </view>
+  
+  <!-- 底部浮窗 -->
+  <view class="footer">
+    <view class="footer-l" bindtap='gohome'>返回首页</view>
+    <button plain="true" open-type="share" class="footer-r" bindtap='share'>分享文章</button>
+  </view>
+</view>

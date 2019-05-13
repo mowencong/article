@@ -1,0 +1,95 @@
+.aricalDetail{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.title{
+  font-size:24px;
+  line-height:28px;
+  font-weight:bold;
+  color:#333;
+  margin-bottom:10px;
+}
+.images .img{
+  width:100%;
+  /* height:100px; */
+}
+.times{
+  text-align: right;
+  font-size: 14px;
+}
+/* 文章内容 */
+.content{
+  width:100%;
+  
+}
+.box{
+  width:100%;
+  margin:0 2%;
+}
+.imgs{
+  width:96%;
+  /* height:200px; */
+}
+.content_title{
+  line-height:30px;
+  width:90%;
+  text-align: center;
+}
+/* 浮窗 */
+.footer{
+  display: flex;
+  position: fixed;
+  bottom:20px;
+  z-index:1000;
+  width:60%;
+  margin:0 20%;
+  height:36px;
+  line-height:36px;
+  background:#000;
+  color:#fff !important;
+  opacity: 0.8;
+  border:1px solid #000;
+  border-radius: 5%;
+}
+.footer-l,.footer-r{
+  padding:0 !important;
+  flex:1 !important;
+  text-align: center !important;
+  color:#fff !important;
+  line-height:36px !important;
+}
+/* 推荐文章 */
+.recommendAtical{
+  width:100%;
+  margin-top:10px;
+}
+.recommend{
+  height:50px;
+  line-height: 50px;
+}
+.recommend-l{
+  display: inline-block;
+  height:20px;
+  width:5px;
+  background: red;
+  margin:0 10px;
+}
+.articallist{
+  display: flex
+}
+.articallist-l,.articallist-r{
+  flex:1;
+}
+.articallist-r{
+  margin-left:10px;
+}
+.currentTime{
+  font-size: 14px;
+  margin-top:20px;
+  color:#666;
+}
+.articallist-l image{
+  width:100%;
+  height:150px;
+}
